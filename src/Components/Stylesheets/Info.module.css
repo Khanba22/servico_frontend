@@ -1,0 +1,181 @@
+.container {
+    position: relative;
+    height: 125vh;
+    width: 100%;
+    padding: 0 100px;
+    background-color: white;
+    /* border: 10px solid yellow; */
+}
+
+.canvas {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.manCover {
+    width: 100%;
+    display: flex;
+    height: 50%;
+    justify-content: end;
+    background: linear-gradient(179deg, #e3e2e8, #e3e2e8, #dfdee3, #e0dfe5, #dddde5, #d8d7de);
+}
+
+.content {
+    padding-top: 50px;
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+}
+
+.wave {
+    width: 110%;
+    transform: translateY(190px);
+    -webkit-transform: translateY(190px);
+    -moz-transform: translateY(190px);
+    -ms-transform: translateY(190px);
+    -o-transform: translateY(190px);
+}
+
+.content h1 {
+    color: #2D4849;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.card1 {
+    padding: 50px 50px 0px 50px;
+    position: absolute;
+    height: 400px;
+    top: 17.5%;
+    border-radius: 0 30px 0 0px;
+    left: 10%;
+    width: 600px;
+    background-color: #2D4849;
+    -webkit-border-radius: 0 30px 0 0px;
+    -moz-border-radius: 0 30px 0 0px;
+    -ms-border-radius: 0 30px 0 0px;
+    -o-border-radius: 0 30px 0 0px;
+    background: #2D4849;
+
+    
+}
+
+.card2 {
+    padding: 50px 50px 0px 50px;
+    position: absolute;
+    height: 370px;
+    top: 40%;
+    border-radius: 40px;
+    left: 60%;
+    width: 370px;
+    background-color: white;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    box-shadow: 0px 4px 50px 0px #4d6bb927;
+}
+
+.card3 {
+    transform: translateY(-100px);
+    padding: 50px 50px 0px 50px;
+    border-radius: 40px;
+    position: absolute;
+    bottom: 0%;
+    left: 10%;
+    height: 370px;
+    width: 370px;
+    background-color: #E8B9B6;
+    box-shadow: 0px 4px 50px 0px #e8b9b62f;
+    -webkit-transform: translateY(-100px);
+    -moz-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    -o-transform: translateY(-100px);
+}
+
+
+.card1 h2,.card2 h2,.card3 h2{
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+
+
+.card1 p,.card1 h2{
+    color: white;
+}
+
+.card3 p,.card3 h2,.card2 p,.card2 h2{
+    color: #2D4849;
+}
+
+.card1 div,.card2 div,.card3 div{
+    position: absolute;
+    top: -35px;
+    left: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    height: 60px;
+    border-radius: 5px 5px 10px 10px;
+    width: 50px;
+    background-color: #2D4849;
+    -webkit-border-radius: 5px 5px 10px 10px;
+    -moz-border-radius: 5px 5px 10px 10px;
+    -ms-border-radius: 5px 5px 10px 10px;
+    -o-border-radius: 5px 5px 10px 10px;
+}
+
+.card1 div,.card1 button{
+    font-weight: 600;
+    background-color: #E8B9B6;
+}
+
+.card2 div{
+    background-color: #2D4849;
+    color: #dddde5;
+}
+
+.card3 div{
+    background-color: #dddde5;
+    color: #2D4849;
+}
+
+.card3 button{
+    background-color: #2d2d2d;
+    color: #E8B9B6;
+}
+
+.card1 button,.card2 button,.card3 button{
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    left: 20%;
+    font-weight: 600;
+    height: 50px;
+    width: 80px;
+    bottom: 0px;
+    outline: none;
+    border: none;
+    border-radius: 20px 20px 0px 0px;
+    -webkit-border-radius: 20px 20px 0px 0px;
+    -moz-border-radius: 20px 20px 0px 0px;
+    -ms-border-radius: 20px 20px 0px 0px;
+    -o-border-radius: 20px 20px 0px 0px;
+}
+
+.card1 p,.card2 p,.card3 p{
+    line-height: 130%;
+    text-align: justify;
+}

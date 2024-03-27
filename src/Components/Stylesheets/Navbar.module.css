@@ -1,0 +1,30 @@
+.container{
+    z-index: 20;
+    height: 50px;
+    position: sticky    ;
+    top: 0;
+    background-color: #C26964;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navList a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.navList img{
+    aspect-ratio: 1;
+    height: 100%;
+    margin: 5px;
+}
+
+.navList{
+    min-width:30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

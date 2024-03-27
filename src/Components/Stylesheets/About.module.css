@@ -1,0 +1,224 @@
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: url("../../Assets/aboutBg.png");
+    background-size: cover;
+
+}
+
+.hanger {
+    top: 0;
+    left: 10%;
+    transform: rotate(90deg);
+    position: absolute;
+    height: 500px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.hanger hr {
+    border: #C26964;
+    background-color: #C26964;
+    width: 100px;
+    height: 5px;
+
+}
+
+.hanger h1 {
+    color: #C26964;
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.cardHolder {
+    position: relative;
+    gap: 20px;
+    height: 80%;
+    width: 70%;
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+}
+
+.card {
+    transition: 0.5s;
+    height: 250px;
+    width: 400px;
+    border-radius: 50px;
+    border: 2px solid #2D4849;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.card:nth-child(n-2):hover {
+    height: 450px;
+    background-color: black;
+}
+
+.card:nth-child(1):hover {
+    z-index: 2;
+    height: 450px;
+    background-color: #2D4849;
+}
+
+.card:nth-child(4):hover {
+    height: 450px;
+    background-color: #2D4849;
+}
+
+.content {
+
+    padding: 20px;
+}
+
+.content p {
+    color: #2D4849;
+}
+
+.content h1 {
+    color: #2D4849;
+    margin: 10px 0;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 2.7rem;
+}
+
+.card:nth-child(n-1):hover .content h1 {
+    color: white;
+}
+
+.card:nth-child(n-1):hover .content p {
+    color: white;
+}
+
+.card:nth-child(1):hover~.card:nth-child(4) .content * {
+    color: white;
+    background-color: #2D4849;
+}
+
+.card:nth-child(n-1):hover~.card:nth-child(4) .content * {
+    color: #2D4849;
+}
+
+
+.card:nth-child(n-1):hover~.card:nth-child(4) .imageHeader img {
+    display: none;
+}
+
+.card:nth-child(4) .imageHeader {
+    display: block;
+}
+
+.card:nth-child(4) .content h1:nth-child(2) {
+    display: none;
+}
+
+
+
+.card:nth-child(1):hover~.card:nth-child(4) .content h1:nth-child(2) {
+    display: block;
+}
+
+.card:nth-child(1):hover~.card:nth-child(4) .content h1:nth-child(1) {
+    display: none;
+}
+
+.card:nth-child(n+1):hover~.card:nth-child(4) {
+    background-color: transparent;
+    height: 250px;
+}
+
+
+
+.card:nth-child(1):hover ~ .card:nth-child(4) {
+    animation-delay: 0.5ms;
+    height: 450px;
+    background-color: #2D4849;
+    transform: translate(-105%, -105%);
+    -webkit-transform: translate(-105%, -105%);
+    -moz-transform: translate(-105%, -105%);
+    -ms-transform: translate(-105%, -105%);
+    -o-transform: translate(-105%, -105%);
+}
+
+
+
+
+
+.card:nth-child(1):hover~.card:nth-child(4) .imageHeader img {
+    display: block;
+}
+
+.card:nth-child(1):hover~.card:nth-child(5) {
+    display: block;
+}
+
+.card:nth-child(1):hover~.card:nth-child(1) {
+    transform: translateX(105%, 105%);
+    -webkit-transform: translateX(105%, 105%);
+    -moz-transform: translateX(105%, 105%);
+    -ms-transform: translateX(105%, 105%);
+    -o-transform: translateX(105%, 105%);
+}
+
+
+
+.card:nth-child(4) {
+    height: 450px;
+    background-color: #2D4849;
+}
+
+.card:nth-child(4) * {
+    color: white;
+}
+
+.imageHeader {
+    transition: 0.5s;
+    display: none;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.card:hover .imageHeader {
+    display: block;
+}
+
+.card:nth-child(1):hover~.card:nth-child(4) .content * {
+    color: white;
+    background-color: #2D4849;
+}
+
+.card:nth-child(5) {
+    transform: translate(55%, calc(-180% - 20px));
+    -webkit-transform: translate(55%, calc(-180% - 20px));
+    -moz-transform: translate(55%, calc(-180% - 20px));
+    -ms-transform: translate(55%, calc(-180% - 20px));
+    -o-transform: translate(55%, calc(-180% - 20px));
+    display: none;
+}
