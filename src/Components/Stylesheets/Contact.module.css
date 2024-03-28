@@ -1,0 +1,196 @@
+.container{
+    height: 95vh;
+    width: 100%;
+    display: flex;
+}
+/* Demonstrate vanker deadlock detection algorithm find the processes involved in deadlock if there is a deadlock. Resolve the deadlock by selecting a victim process that has maximum number of allocated resources */
+.left{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    padding: 100px 20px 50px 20px;
+    height: 100%;
+    background-color: #2D4849;
+}
+
+.contents{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+    color: #f5eff4;
+}
+
+
+
+.contents p{
+    margin: 10px 0;
+    font-weight: 200;
+}
+
+.socials{
+    width: 50%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.info p{
+    font-size: 90%;
+    font-weight: 300;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+}
+.icon{
+    margin-right: 20px;
+}
+
+.right{
+    padding: 50px;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #D6D1D5;
+}
+
+.header h1{
+    font-size: 250%;
+}
+
+.header p{
+    padding: 0 10px;
+}
+
+.inputGrp textarea{
+    outline: none;
+    background-color: transparent   ;
+    padding: 10px;
+    height: 200px;
+}
+
+
+
+.inputGrp{
+    margin-top: 30px;
+    height: 100px;
+    display: flex;
+    display: flex;
+    width: 45%;
+    justify-content: space-around;
+    flex-direction: column  ;
+}
+
+#messageSection{
+    height: 300px;
+}
+
+.inputGrp label{
+    font-weight: 500;
+    color: #2D4849;
+}
+
+.inputGrp input{
+    color: #2D4849;
+    padding: 5px 10px;
+    outline: none;
+    font-size: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #2D4849;
+    width: 100%;
+}
+
+.inputGrp input:focus,.inputGrp input::selection,.inputGrp input:hover{
+    transition: 0.5s;
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.inputGrp button:hover{
+    transition: 0.5s;
+    transform: translateY(-3px);
+    scale: 1.05;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    -webkit-transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -o-transform: translateY(-3px);
+}
+
+.layout{
+    padding: 0 100px ;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.inputGrp button{
+    font-size: 120%;
+    border: none;
+    outline: none;
+    background-color: #2D4849;
+    color: #D6D1D5;
+    border-radius: 10px;
+    height: 50px;
+    width: 250px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.layout:nth-child(3) .inputGrp ,
+.layout:nth-child(3) .inputGrp input{
+    width: 100%;
+}
+
+#circle1{
+    bottom: -10%;
+    right: -5%;
+    height: 300px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #E8B9B6;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#circle2 {
+    border-radius: 50%;
+    height: 180px;
+    aspect-ratio: 1;
+    bottom: 15%;
+    right: 3%;
+    position: absolute;
+    background-color: #f3f2ed6b;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}

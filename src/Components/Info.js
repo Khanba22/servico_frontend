@@ -20,13 +20,13 @@ function Info() {
                     <button>I Need Help</button>
                 </div>
                 <div className={styles.card2}>
-                    <div>1</div>
+                    <div>2</div>
                     <h2>We Are Family</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati aliquid adipisci consectetur, voluptatibus veniam ipsam officia vel ut ipsa delectus! Numquam vitae quam impedit aspernatur incidunt?</p>
                     <button>I Need Help</button>
                 </div>
                 <div className={styles.card3}>
-                    <div>1</div>
+                    <div>3</div>
                     <h2>Lorem, ipsum.</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati aliquid adipisci consectetur, voluptatibus veniam ipsam officia vel ut ipsa delectus! Numquam vitae quam impedit aspernatur incidunt? Necessitatibus magnam cum</p>
                     <button>I Need Help</button>

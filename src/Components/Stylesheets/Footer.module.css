@@ -1,0 +1,120 @@
+.container{
+    height: 75vh;
+    padding: 0 100px;
+    width: 100%;
+    background-color: black;
+}
+
+.header{
+    height:65%;
+}
+
+.footer{
+    height: calc(35% - 10px);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .column{
+    width: 33%;
+    height: 100%;
+}
+
+
+
+.header,.footer{
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header{
+    /* border: 1px solid saddlebrown; */
+    padding: 100px 0px 100px 0px;
+}
+
+.column p{
+    font-weight: 500;
+    font-size: 120%;
+    margin-bottom: 10px;
+}
+
+.column h6{
+    font-weight: 300;
+    margin: 10px 0;
+    font-size: 80%;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: 100%;
+    /* border: 1px solid green; */
+}
+
+.inputHolder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    height: 150px;
+    width: 350px;
+    background-color: #191919;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.inputGroup{
+    width: 100%;
+}
+
+.inputHolder label{
+    margin: 5px;
+}
+
+.inputGroup input{
+
+    border-radius: 10px 0px 0px 10px;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    width: 80%;
+    height: 40px;
+    -webkit-border-radius: 10px 0px 0px 10px;
+    -moz-border-radius: 10px 0px 0px 10px;
+    -ms-border-radius: 10px 0px 0px 10px;
+    -o-border-radius: 10px 0px 0px 10px;
+}
+
+.inputGroup button{
+    width: 20%;
+    height: 40px;
+    background-color: #0081FE;
+    outline: none;
+    border-radius: 0 10px 10px 0px;
+    border: none;
+    -webkit-border-radius: 0 10px 10px 0px;
+    -moz-border-radius: 0 10px 10px 0px;
+    -ms-border-radius: 0 10px 10px 0px;
+    -o-border-radius: 0 10px 10px 0px;
+}
+
+.holder{
+    height: 60%;
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.holder h6{
+    font-weight: 300;
+    margin: 10px 0;
+    font-size: 80%;
+}
