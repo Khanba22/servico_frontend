@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "./Stylesheets/Services.module.css"
 function Services() {
-    const arr = [1,2,3,4,5,6,7]
+    const arr = [1, 2, 3, 4, 5, 6, 7]
     return (
         <div className={styles.container}>
             <div className={styles.cardHolder}>
@@ -10,11 +10,11 @@ function Services() {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est suscipit dicta ullam a temporibus placeat.</p>
                 </div>
                 {
-                    arr.map(el=>{
+                    arr.map(el => {
                         return <>
-                            <div className={styles.cardContainer} key={el}>
+                            <div key={el} className={styles.cardContainer} >
                                 <div className={styles.card}>
-                                    <div className={styles.icon}><img src="" alt="Image" /></div>
+                                    <div className={styles.icon}><img src="/" alt="Image" /></div>
                                     <button>Order</button>
                                 </div>
                             </div>

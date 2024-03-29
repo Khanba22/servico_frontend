@@ -34,8 +34,8 @@ function Footer() {
                     <div className={styles.inputHolder}>
                         <label htmlFor="">Subscribe</label>
                         <div className={styles.inputGroup}>
-                            <input type="text" />
-                            <button>-></button>
+                            <input type="text" placeholder='Enter your Email' />
+                            <button></button>
                         </div>
                     </div>
                 </div>
