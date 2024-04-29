@@ -109,3 +109,65 @@
     -o-border-radius: 10px;
     margin: 30px;
 }
+
+
+@media screen and (max-width:800px) {
+    .container{
+        padding: 0 10px;
+    }
+
+    .cardContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: clamp(10px,45%,600px);
+        margin-bottom: 10px;
+        padding: 0;
+    }
+    
+    #first{
+        aspect-ratio: 100;
+        align-items: center;
+        display: flex;
+        padding: 10px 0;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    
+    #first p{
+        width: 100%;
+        font-size: 120%;
+        text-align: left;
+        padding: 10px 4%;
+    }
+    
+    #first h1{
+        padding: 0px;
+        line-height: 100%;
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    .card{
+        height: clamp(100px,100%,600px);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+}
+    
+    
+    .card button{
+        width: 70%;
+        height: 30px;
+        bottom: 0;
+    }
+    
+    .seeMore{
+        font-weight: 500;
+        width: 200px;
+        height: 40px;
+    }
+}
