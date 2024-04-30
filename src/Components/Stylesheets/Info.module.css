@@ -35,8 +35,11 @@
     width: 100%;
 }
 
+
 .wave {
+    display: block;
     width: 110%;
+    max-width: 200%;
     transform: translateY(190px);
     -webkit-transform: translateY(190px);
     -moz-transform: translateY(190px);
@@ -101,7 +104,9 @@
 }
 
 
-.card1 h2,.card2 h2,.card3 h2{
+.card1 h2,
+.card2 h2,
+.card3 h2 {
     text-align: center;
     font-size: 2.5rem;
     line-height: 100%;
@@ -109,15 +114,21 @@
 }
 
 
-.card1 p,.card1 h2{
+.card1 p,
+.card1 h2 {
     color: white;
 }
 
-.card3 p,.card3 h2,.card2 p,.card2 h2{
+.card3 p,
+.card3 h2,
+.card2 p,
+.card2 h2 {
     color: #2D4849;
 }
 
-.card1 div,.card2 div,.card3 div{
+.card1 div,
+.card2 div,
+.card3 div {
     position: absolute;
     top: -35px;
     left: 20%;
@@ -135,30 +146,33 @@
     -o-border-radius: 5px 5px 10px 10px;
 }
 
-.card1 div,.card1 button{
+.card1 div,
+.card1 button {
     font-weight: 600;
     background-color: #E8B9B6;
 }
 
-.card2 div{
+.card2 div {
     background-color: #2D4849;
     color: #dddde5;
 }
 
-.card3 div{
+.card3 div {
     background-color: #dddde5;
     color: #2D4849;
 }
 
-.card3 button{
+.card3 button {
     background-color: #2d2d2d;
     color: #E8B9B6;
 }
 
-.card1 button,.card2 button,.card3 button{
+.card1 button,
+.card2 button,
+.card3 button {
     cursor: pointer;
     position: absolute;
-    padding: 10px;
+    padding: 0px;
     left: 20%;
     font-weight: 600;
     height: 50px;
@@ -173,7 +187,106 @@
     -o-border-radius: 20px 20px 0px 0px;
 }
 
-.card1 p,.card2 p,.card3 p{
+.card2 button{
+    background-color: #E8B9B6;
+}
+
+.card1 p,
+.card2 p,
+.card3 p {
     line-height: 130%;
     text-align: justify;
+}
+
+
+
+@media screen and (max-width:800px) {
+
+    .container{
+        height: auto;
+    }
+
+    .card1 h2,
+    .card2 h2,
+    .card3 h2{
+    
+        font-size: 2.2rem;
+        text-align: right;
+    }
+
+    .card1,
+    .card2,
+    .card3 {
+        bottom: 0;
+        top: 0;
+        position: relative;
+        width: 100%;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+}
+
+    .card1 div,.card2 div,.card3 div{
+        top: 9%;
+        left: 5%;
+    }
+
+    .canvas {
+        width: 100%;
+        aspect-ratio: 1;
+        height: auto;
+    }
+
+    .wave {
+        display: none;
+    }
+
+    .manCover img {
+        display: none;
+    }
+
+    .manCover {
+        background-image: url("../../Assets/manBgMobile.png");
+        rotate: 90deg;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 70%;
+    }
+
+    .content {
+        padding-top: 150px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .card1,.card2,.card3 {
+        left: 0;
+        top: 0;
+        border-radius: 0;
+        padding: 50px 10px;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+
+    .card1 button,.card2 button,.card3 button{
+        bottom: 10px;
+        border-radius: 10px;
+        padding: 0;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+
+    .container {
+        padding: 0;
+    }
 }
