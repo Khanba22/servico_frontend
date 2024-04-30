@@ -1,4 +1,4 @@
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,7 +8,20 @@
     width: 100%;
 }
 
-.content{
+
+.seeMore:hover {
+    scale: 1.02;
+    transition: 0.2s;
+    background-color: #C26964;
+    border: 2px solid #c9bebe;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+
+.content {
     height: 50%;
     width: 50%;
     display: flex;
@@ -17,41 +30,42 @@
     align-items: center;
 }
 
-.textContent{
+.textContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.textContent p{
+.textContent p {
     font-size: 100%;
     width: 70%;
     color: aliceblue;
     text-align: center;
 }
 
-.header{
+.header {
     width: max-content;
     justify-content: space-around;
     display: flex;
 }
 
-.header h1{
+.header h1 {
     margin: 0px 5px;
     font-weight: 600;
-    text-shadow: 1px 1px 2px #ffffff    ;
+    text-shadow: 1px 1px 2px #ffffff;
     font-size: 3.5rem;
 }
 
-.header h1:first-child{
+.header h1:first-child {
     color: white;
 }
-.header h1:last-child{
+
+.header h1:last-child {
     color: #C26964;
 }
 
-.seeMore{
+.seeMore {
     color: white;
     font-size: 110%;
     font-weight: 500;
@@ -66,4 +80,66 @@
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     margin: 30px;
+}
+
+
+@media screen and (max-width:700px) {
+    .container {
+        padding-top: 0vh;
+        padding-bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: url("../../Assets/landingimage.png");
+        background-size: cover;
+        width: 100%;
+    }
+
+    .content img {
+        width: 65vw;
+        backdrop-filter: drop-shadow(0px 0px 10px black);
+    }
+
+    .content {
+        backdrop-filter: brightness(0.5);
+        height: 100%;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+
+    .textContent p {
+        font-size: 100%;
+        line-height: 120%;
+        width: 90%;
+        text-align: justify;
+    }
+
+    .header {
+        width: max-content;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        display: flex;
+        margin: 10px 0;
+    }
+
+    .header h1 {
+        margin: 0px 0px;
+        line-height: 100%;
+        text-shadow: 0px 1px 2px #c9bebe;
+        font-size: 2.5rem;
+    }
+
+    .seeMore {
+        background-color: transparent;
+        border: 2px solid #C26964;
+        font-size: 110%;
+        width: 250px;
+        height: 40px;
+    }
+
 }
