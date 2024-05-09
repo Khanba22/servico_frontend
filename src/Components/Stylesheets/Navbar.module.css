@@ -70,13 +70,21 @@
 
     .burgerButton hr{
         background-color: white;
-        border: 1px solid white;
-    }
+        color: white;
+        border-radius: 10px;
+        height: 3px;
+        border: 1px solid rgb(1, 1, 1);
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
 
     .burgerButtonActive hr{
         transition: 0.4s;
+        height: 2px;
         position: absolute;
-        background-color: black;
+        background-color: rgb(0, 0, 0);
         border: 1px solid black;
         top: calc(50% - 2px);
         left: 5px;

@@ -4,7 +4,7 @@ import styles from "./Stylesheets/Navbar.module.css";
 const Hamburger = () => {
   const [show, setShow] = useState(false);
   const screenRef = useRef(null);
-  const buttonRef = useRef(null)
+  const buttonRef = useRef(null);
 
   const handleClick = (e) => {
     if (show) {
@@ -20,17 +20,21 @@ const Hamburger = () => {
   return (
     <>
       <div className={styles.burgerContainer}>
-        <button ref={buttonRef} onClick={handleClick} className={styles.burgerButton}>
+        <button
+          ref={buttonRef}
+          onClick={handleClick}
+          className={styles.burgerButton}
+        >
           <hr />
           <hr />
           <hr />
         </button>
       </div>
       <div ref={screenRef} className={styles.screen}>
-        <p>s</p>
-        <p>t</p>
-        <p>s</p>
-        <p>s</p>
+        <a href="/">Home</a>
+        <a href="/">Services</a>
+        <a href="/">Contact Us</a>
+        <a href="/">About</a>
       </div>
     </>
   );
@@ -40,12 +44,12 @@ function Navbar() {
   return (
     <div className={styles.container}>
       <div className={styles.navList}>
-            <a href="">Home</a>
-            <a href="">Services</a>
-            <a href="">Contact Us</a>
-            <a href="">About</a>
-            <img src="" alt="" />
-        </div>
+        <a href="/">Home</a>
+        <a href="/">Services</a>
+        <a href="/">Contact Us</a>
+        <a href="/">About</a>
+        <img src="" alt="" />
+      </div>
       <Hamburger />
     </div>
   );

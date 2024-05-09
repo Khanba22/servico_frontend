@@ -3,7 +3,7 @@
     width: 100%;
     display: flex;
 }
-/* Demonstrate vanker deadlock detection algorithm find the processes involved in deadlock if there is a deadlock. Resolve the deadlock by selecting a victim process that has maximum number of allocated resources */
+
 .left{
     position: relative;
     overflow: hidden;
@@ -193,4 +193,31 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+}
+
+@media screen and  (max-width:800px) {
+    .container{
+        flex-direction: column;
+    }
+    .left{
+        display: none;
+    }
+    .right{
+        width: 100%;
+        padding: 0px 20px;
+        height: auto;
+    }
+
+    .layout{
+        padding: 0;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .inputGrp{
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
 }
