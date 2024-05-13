@@ -10,11 +10,11 @@
     justify-content: flex-end;
 }
 
-.burgerButton{
+.burgerButton {
     display: none;
 }
 
-.screen{
+.screen {
     display: none;
 }
 
@@ -40,7 +40,7 @@
 
 @media screen and (max-width:800px) {
 
-    .navList{
+    .navList {
         display: none;
     }
 
@@ -49,10 +49,10 @@
         width: 100%;
     }
 
-    .burgerContainer{
+    .burgerContainer {
         position: absolute;
         top: 5px;
-        right:15px;
+        right: 15px;
     }
 
     .burgerButton {
@@ -68,7 +68,7 @@
         padding: 10px;
     }
 
-    .burgerButton hr{
+    .burgerButton hr {
         background-color: white;
         color: white;
         border-radius: 10px;
@@ -78,9 +78,9 @@
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
-}
+    }
 
-    .burgerButtonActive hr{
+    .burgerButtonActive hr {
         transition: 0.4s;
         height: 2px;
         position: absolute;
@@ -93,27 +93,27 @@
         -moz-transition: 0.4s;
         -ms-transition: 0.4s;
         -o-transition: 0.4s;
-}
+    }
 
-    .burgerButtonActive hr:nth-child(1){
+    .burgerButtonActive hr:nth-child(1) {
         display: none;
     }
 
-    .burgerButtonActive hr:nth-child(2){
+    .burgerButtonActive hr:nth-child(2) {
         transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         -o-transform: rotate(45deg);
-}
+    }
 
-    .burgerButtonActive hr:nth-child(3){
+    .burgerButtonActive hr:nth-child(3) {
         transform: rotate(-45deg);
         -webkit-transform: rotate(-45deg);
         -moz-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
         -o-transform: rotate(-45deg);
-}
+    }
 
     .screen {
         position: absolute;
@@ -137,24 +137,25 @@
         -moz-transition: 0.4s;
         -ms-transition: 0.4s;
         -o-transition: 0.4s;
-}
+    }
 
-    .burgerButtonActive{
+    .burgerButtonActive {
         position: relative;
         z-index: 2;
     }
 
-    .screenActive{
+    .screenActive {
         transform: translateX(0);
         -webkit-transform: translateX(0);
         -moz-transform: translateX(0);
         -ms-transform: translateX(0);
         -o-transform: translateX(0);
-}
+    }
 
-    
+
 
     .container {
+        overflow-x:clip;
         height: auto;
         background-color: transparent;
     }

@@ -19,24 +19,9 @@ function Contact() {
 
   const handleChange = (e) => {
     const name = e.target.name;
-    let current = new Date();
-    let cDate =
-      current.getFullYear() +
-      "-" +
-      (current.getMonth() + 1) +
-      "-" +
-      current.getDate();
-    let cTime =
-      current.getHours() +
-      ":" +
-      current.getMinutes() +
-      ":" +
-      current.getSeconds();
-    let dateTime = cDate + " " + cTime;
+
     setData({
         ...data,
-        "date": `${dateTime}`,
-        "name": data.firstName + " " + data.lastName,
         [name]: e.target.value
       });
   };
@@ -49,12 +34,31 @@ function Contact() {
     
     console.log(data);
     if (checkValidation()) {
+      let current = new Date();
+      let cDate =
+        current.getFullYear() +
+        "-" +
+        (current.getMonth() + 1) +
+        "-" +
+        current.getDate();
+      let cTime =
+        current.getHours() +
+        ":" +
+        current.getMinutes() +
+        ":" +
+        current.getSeconds();
+      let dateTime = cDate + " " + cTime;
+      const reqData = {
+        ...data,
+        name: data.firstName + " " + data.lastName,
+        date:`${dateTime}`
+      }
       await fetch(`${baseUrl}/user/sendMessage`, {
         headers: {
           "Content-Type": "application/json",
         },
         method: "POST",
-        body: JSON.stringify(data),
+        body: JSON.stringify(reqData),
       })
         .then(async (res) => {
           if (res.status === 200) {

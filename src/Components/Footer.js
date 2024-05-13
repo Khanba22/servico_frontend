@@ -15,8 +15,6 @@ function Footer() {
                     <h6>Employee Database</h6>
                     <h6>Employee Database</h6>
                     <h6>Employee Database</h6>
-                    <h6>Employee Database</h6>
-                    <h6>Employee Database</h6>
                 </div>
                 <div className={styles.column}>
                     <p>Information</p>
