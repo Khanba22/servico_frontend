@@ -1,6 +1,17 @@
 import React, { useRef, useState } from "react";
 import styles from "./Stylesheets/Navbar.module.css";
 
+const SliderWindow = (props) => {
+
+  return (
+    <>
+      <div style={props.active?{transform:"translateX(-300px)"}:{}} className={styles.sliderContainer}>
+          hsdasd
+      </div>
+    </>
+  )
+}
+
 const Hamburger = () => {
   const [show, setShow] = useState(false);
   const screenRef = useRef(null);
@@ -41,6 +52,7 @@ const Hamburger = () => {
 };
 
 function Navbar() {
+  const [active,setActive] = useState(false);
   return (
     <div className={styles.container}>
       <div className={styles.navList}>
@@ -48,8 +60,9 @@ function Navbar() {
         <a href="/">Services</a>
         <a href="/">Contact Us</a>
         <a href="/">About</a>
-        <img src="" alt="" />
+        <img style={{zIndex:"10"}} onClick={()=>{setActive(!active)}} src="" alt="" />
       </div>
+      <SliderWindow active = {active}/>
       <Hamburger />
     </div>
   );
