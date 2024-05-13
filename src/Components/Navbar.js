@@ -2,15 +2,21 @@ import React, { useRef, useState } from "react";
 import styles from "./Stylesheets/Navbar.module.css";
 
 const SliderWindow = (props) => {
-
   return (
     <>
-      <div style={props.active?{transform:"translateX(-300px)"}:{}} className={styles.sliderContainer}>
-          hsdasd
+      <div
+        style={props.active ? { transform: "translateX(-200px)" } : {}}
+        className={styles.sliderContainer}
+      >
+        <p className={styles.sliderButtons}>temp</p>
+        <p className={styles.sliderButtons}>temp</p>
+        <p className={styles.sliderButtons}>temp</p>
+        <p className={styles.sliderButtons}>temp</p>
+        <p className={styles.sliderButtons}>temp</p>
       </div>
     </>
-  )
-}
+  );
+};
 
 const Hamburger = () => {
   const [show, setShow] = useState(false);
@@ -42,27 +48,34 @@ const Hamburger = () => {
         </button>
       </div>
       <div ref={screenRef} className={styles.screen}>
-        <a href="/">Home</a>
-        <a href="/">Services</a>
-        <a href="/">Contact Us</a>
-        <a href="/">About</a>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contactUs">Contact Us</a>
+        <a href="#about">About</a>
       </div>
     </>
   );
 };
 
 function Navbar() {
-  const [active,setActive] = useState(false);
+  const [active, setActive] = useState(false);
   return (
     <div className={styles.container}>
       <div className={styles.navList}>
-        <a href="/">Home</a>
-        <a href="/">Services</a>
-        <a href="/">Contact Us</a>
-        <a href="/">About</a>
-        <img style={{zIndex:"10"}} onClick={()=>{setActive(!active)}} src="" alt="" />
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contactUs">Contact Us</a>
+        <a href="#about">About</a>
+        <img
+          style={{ zIndex: "10" }}
+          onClick={() => {
+            setActive(!active);
+          }}
+          src=""
+          alt=""
+        />
       </div>
-      <SliderWindow active = {active}/>
+      <SliderWindow active={active} />
       <Hamburger />
     </div>
   );

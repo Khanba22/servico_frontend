@@ -101,7 +101,7 @@ function Contact() {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="contactUs">
       <div className={styles.left}>
         <div className={styles.contents}>
           <div className={styles.header}>

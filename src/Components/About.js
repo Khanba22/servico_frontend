@@ -3,7 +3,7 @@ import styles from "./Stylesheets/About.module.css"
 import seoIcon from "../Assets/SEOIcon.png"
 function About() {
     return (
-        <div className={styles.container}>
+        <div id='about' className={styles.container}>
             <div className={styles.hanger}>
                 <hr />
                 <h1>About Us</h1>

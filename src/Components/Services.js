@@ -19,7 +19,7 @@ function Services() {
     getServices();
   }, []);
   return (
-    <div className={styles.container}>
+    <div id="services" className={styles.container}>
       <div className={styles.cardHolder}>
         <div id={styles.first} className={styles.cardContainer}>
           <h1 onClick={getServices}>Explore Our Services</h1>

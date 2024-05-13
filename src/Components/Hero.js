@@ -4,7 +4,7 @@ import logo from "../Assets/logo.png"
 
 function Hero() {
     return (
-        <div className={styles.container}>
+        <div id='home' className={styles.container}>
             <div className={styles.content}>
                 <img src={logo} alt="" />
                 <div className={styles.textContent}>
