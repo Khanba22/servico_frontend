@@ -1,0 +1,58 @@
+[
+    {
+      "id": 1,
+      "category": "Electronics",
+      "iconUrl": "/images/electronics.png"
+    },
+    {
+      "id": 2,
+      "category": "Home Appliances",
+      "iconUrl": "/images/home_appliances.png"
+    },
+    {
+      "id": 3,
+      "category": "Fashion",
+      "iconUrl": "/images/fashion.png"
+    },
+    {
+      "id": 4,
+      "category": "Books",
+      "iconUrl": "/images/books.png"
+    },
+    {
+      "id": 5,
+      "category": "Toys",
+      "iconUrl": "/images/toys.png"
+    },
+    {
+      "id": 6,
+      "category": "Sports",
+      "iconUrl": "/images/sports.png"
+    },
+    {
+      "id": 7,
+      "category": "Furniture",
+      "iconUrl": "/images/furniture.png"
+    },
+    {
+      "id": 8,
+      "category": "Groceries",
+      "iconUrl": "/images/groceries.png"
+    },
+    {
+      "id": 9,
+      "category": "Health & Beauty",
+      "iconUrl": "/images/health_beauty.png"
+    },
+    {
+      "id": 10,
+      "category": "Automotive",
+      "iconUrl": "/images/automotive.png"
+    },
+    {
+      "id": 11,
+      "category": "Garden",
+      "iconUrl": "/images/garden.png"
+    }
+  ]
+  

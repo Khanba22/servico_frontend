@@ -1,17 +1,22 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Stylesheets/Services.module.css";
 import baseUrl from "../Constants/baseURL";
+import data from "../data/tempservices.json"
 function Services() {
-  const [serviceData, setData] = useState([]);
+  const [serviceData, setData] = useState(data);
   const getServices = async () => {
     const res = await fetch(`${baseUrl}/user/services`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
       },
+    }).then(res=>{
+      return res.json();
+    }).then(data=>{
+      setData(data);
+    }).catch(err=>{
+      console.log(err);
     });
-    const data = await res.json();
-    setData(data);
     console.log(serviceData);
   };
 
